@@ -18,7 +18,7 @@ uv sync
 ```
 
 ### 3. 配置API密钥
-在项目根目录下找到 `config.json` 文件，按填写相关服务的API密钥：
+在项目根目录下找到 `config.json` 文件，填写openai格式的大模型API密钥：
 ```json
 {
   "llm": {
@@ -41,9 +41,9 @@ uv sync
   }
 }
 ```
-novel_to_script用于调用大模型将文本转换为剧本
-character_profile调用大模型为新角色提供性格描写
-voice_design调用minmax的speech模型通过性格描写生成一段音色。
+novel_to_script用于调用大模型将文本转换为剧本 
+character_profile调用大模型为新角色提供性格描写 
+voice_design调用minmax的speech模型通过性格描写生成一段音色。 
 
 ### 4. 设置环境变量
 为了使程序能够找到Index TTS的位置，请设置如下环境变量：
