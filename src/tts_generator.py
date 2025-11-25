@@ -95,7 +95,7 @@ for item in task["lines"]:
     for i in range(len(script_data["lines"])):
         seg = AudioSegment.from_wav(SEGMENTS_DIR / f"segment_{i:03d}.wav")
         combined += seg + AudioSegment.silent(duration=500)
-    final_output = SEGMENTS_DIR / "full_drama.wav"
+    final_output = CHAPTER_DIR / "full_drama.wav"
     combined.export(final_output, format="wav")
     print(f"✅ 有声剧生成完成: {final_output}")
     return str(final_output)
