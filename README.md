@@ -36,7 +36,7 @@ uv sync
   "minimax": {
     "voice_design": {
       "url": "https://api.minimaxi.com/v1/voice_design",
-      "api_token": "YOUR_MINIMAX_API_TOKEN_HERE"
+      "api_token": ""
     }
   }
 }
